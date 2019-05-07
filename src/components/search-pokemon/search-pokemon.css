@@ -1,0 +1,18 @@
+.search-form {
+    display: flex;
+    align-items: baseline;
+}
+
+.search-form .input > input {
+    margin-right: 1rem !important;
+}
+
+@media screen and (max-width: 767px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form .input > input {
+        margin-right: 0 !important;
+    }
+}

@@ -1,0 +1,25 @@
+.types-list {
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    max-width: 1085px;
+    padding: .5rem 0 !important;
+}
+
+.ui.horizontal.types-list.list:not(.celled)>.item {
+    margin-bottom: .75rem;
+}
+
+.ui.horizontal.types-list.list:not(.celled)>.item:first-child {
+    margin-left: 1rem !important;
+}
+
+@media screen and (max-width: 767px) {
+    .ui.horizontal.types-list.list:not(.celled)>.item {
+        margin-bottom: .25rem;
+    }
+
+    .ui.horizontal.types-list.list:not(.celled)>.item:last-child {
+        padding-right: 1rem !important;
+    }
+
+}

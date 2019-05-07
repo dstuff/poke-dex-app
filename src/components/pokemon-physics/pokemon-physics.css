@@ -1,0 +1,16 @@
+.pokemon-physics {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding: .75rem 0;
+    border-top: 1px solid #dcdce1;
+    border-bottom: 1px solid #dcdce1;
+}
+
+.pokemon-physics > .physics-item {
+    margin-right: 1rem;
+}
+
+.pokemon-physics > .physics-item:last-child {
+    margin-right: 0;
+}

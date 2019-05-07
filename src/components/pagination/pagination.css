@@ -1,0 +1,15 @@
+.ui.pagination.menu {
+    margin: 0;
+    display: flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.ui.pagination.menu .item {
+    min-width: 3em;
+    text-align: center;
+    margin-bottom: .5rem;
+    border: 1px solid #dbdbdb;
+}
