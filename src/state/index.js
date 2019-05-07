@@ -48,7 +48,7 @@ class Store {
         return this.loadTargetItems()
       })
       .then(async () => {
-        this.favorites = await JSON.parse(window.localStorage.getItem('favorites'))
+        this.favorites = await JSON.parse(window.localStorage.getItem('favorites')) || []
       })
       .catch(err => {
         const { response } = err
