@@ -2,14 +2,14 @@
 
 ### General description
 Pokedex app was built using standard `create-react-app` and some improvements for using **MobX** decorators.
-This goal has been achieved using `shorthand properties` and `customize-cra` packages with `@babel/plugin-proposal-decorators` as well.
+This goal has been achieved using `react-app-rewired` and `customize-cra` packages with `@babel/plugin-proposal-decorators` as well.
 
 Project linted using `standard` ESLint configuration.
 
 ### Project structure
 
 All app's components placed into `components` directory into separate sub-directories, 
-for example `components/header`. Which contains `item-list.js`, `item-list.css` and `index.js`.
+for example `components/list-item`. Which contains `list-item.js`, `list-item.css` and `index.js`.
 
 ### State management
 

@@ -48,6 +48,7 @@ class Store {
         return this.loadTargetItems()
       })
       .then(async () => {
+        // get 'favorites' from localStorage or set it as empty array
         this.favorites = await JSON.parse(window.localStorage.getItem('favorites')) || []
       })
       .catch(err => {
@@ -145,8 +146,9 @@ class Store {
     if (types.length) {
       tempList = await this.getByTypes(types)
     }
-    // reset active page to 1 if search box isn't empty
-    if (!name || name.length) this.currentPage = 1
+    console.log('reset page', !name, name.length)
+    // reset active page to 1 if filter conditions have been changed
+    this.currentPage = 1
     // filter items by pokemon's name
     const regex = new RegExp(name, 'i')
     this.filteredItems = tempList.filter((item) => {
