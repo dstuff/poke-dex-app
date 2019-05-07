@@ -146,7 +146,6 @@ class Store {
     if (types.length) {
       tempList = await this.getByTypes(types)
     }
-    console.log('reset page', !name, name.length)
     // reset active page to 1 if filter conditions have been changed
     this.currentPage = 1
     // filter items by pokemon's name
