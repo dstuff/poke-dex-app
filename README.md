@@ -1,5 +1,7 @@
 ## App Notes
 
+You can try app [Pokedex App](https://dstuff.github.io/poke-dex-app)
+
 ### General description
 Pokedex app was built using standard `create-react-app` and some improvements for using **MobX** decorators.
 This goal has been achieved using `react-app-rewired` and `customize-cra` packages with `@babel/plugin-proposal-decorators` as well.
